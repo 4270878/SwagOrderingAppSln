@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwagOrderingApp.MainPage">
+
+    <StackLayout>
+        <Label Text=".Net Swag T-Shirts" FontSize="Large" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="Black"/>
+        <Entry Placeholder="Name"></Entry>
+
+        <StackLayout>
+            <Label Text="Gender" FontSize="Medium"/>
+                <RadioButton Content="Female"/>
+                <RadioButton Content="Male"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="T-Shirt Size(S,M,L,XL)" FontSize="Medium"/>
+            <RadioButton Content="S"/>
+            <RadioButton Content="M"/>
+            <RadioButton Content="L"/>
+            <RadioButton Content="XL"/>
+        </StackLayout>
+
+        <Entry Placeholder="Date of Order"></Entry>
+        <StackLayout>
+            <Label Text="T-Shirt Color" FontSize="Medium"/>
+            <RadioButton Content="Black"/>
+            <RadioButton Content="White"/>
+            <RadioButton Content="Navy"/>
+            <RadioButton Content="Grey"/>
+        </StackLayout>
+        
+
+        <Entry Placeholder="Shipping Address"></Entry>
+
+        <Button Text="SUBMIT" BackgroundColor="blue" FontAttributes="Bold" TextColor="White" Clicked="submitButton_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
